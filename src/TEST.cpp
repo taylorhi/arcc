@@ -39,12 +39,12 @@ int main()
 void foward(int time)
 {
    wiringPiSetup ();
-   pinMode (0, OUTPUT);
+   pinMode (2, OUTPUT);
    for (int i = 5; i >= 0; i--)
    {
-      digitalWrite (0, 1);
+      digitalWrite (2, 1);
       delay (time);
-      digitalWrite (0,0);
+      digitalWrite (2,0);
       delay (time);
    }
 }
@@ -55,12 +55,12 @@ void foward(int time)
 void back(int time)
 {
    wiringPiSetup ();
-   pinMode (1, OUTPUT);
+   pinMode (3, OUTPUT);
    for (int i = 5; i >= 0; i--)
    {
-      digitalWrite (1, 1);
+      digitalWrite (3, 1);
       delay (time);
-      digitalWrite (1, 0);
+      digitalWrite (3, 0);
       delay (time);
    }
 }
@@ -71,12 +71,12 @@ void back(int time)
 void turnRt(int time)
 {
    wiringPiSetup ();
-   pinMode (2, OUTPUT);
+   pinMode (14, OUTPUT);
    for (int i = 5; i >= 0; i--)
    {
-      digitalWrite (2, 1);
+      digitalWrite (14, 1);
       delay (time);
-      digitalWrite (2, 0);
+      digitalWrite (14, 0);
       delay (time);
    }
 }
@@ -87,12 +87,12 @@ void turnRt(int time)
 void turnLft(int time)
 {
    wiringPiSetup ();
-   pinMode (3 OUTPUT);
+   pinMode (4 OUTPUT);
    for (int i = 5; i >= 0; i--)
    {
-      digitalWrite (3, 1);
+      digitalWrite (4, 1);
       delay (time);
-      digitalWrite (3, 0);
+      digitalWrite (4, 0);
       delay (time);
    }
 }
